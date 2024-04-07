@@ -34,6 +34,10 @@ app.use('/api/v1/food',foodRoute)
 app.get('/shubham',(req,res)=>{
     res.send("Hi shivam yadava")
 })
+
+app.get('/shubham',(req,res)=>{
+    res.send("Hi shivam yadava")
+})
 app.listen(PORT,()=>{
     console.log(`Listening at port ${PORT}`)
 })
