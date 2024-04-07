@@ -30,7 +30,9 @@ app.use('/api/v1/shop',shopRoute)
 app.use('/api/v1/food',foodRoute)
 // app.use('/api/v1/profile',profileRoute)
 
-
+app.get('/shubham',(req,res)=>{
+    res.send("Hi shivam yadav")
+})
 
 app.listen(PORT,()=>{
     console.log(`Listening at port ${PORT}`)
