@@ -20,9 +20,9 @@ exports.sendverifymail = async(name,email,id)=>{
             from:process.env.MAIL_FROM,
             to:email,
             subject:'For verification of mail from foodies app',
-            html:'<p> Hii '+name+', please click here to <a href="http://localhost:8000/api/v1/auth/verify?id='+id+'"> verify </a> your mail </p> '
+            html:'<p> Hii '+name+', please click here to <a href="https://foodiesapi.onrender.com/api/v1/auth/verify?id='+id+'"> verify </a> your mail </p> '
          }
-
+//http://localhost:8000
          transporter.sendMail(mailOption,(err,info)=>{
             if(err){
                 console.log(err.message)
