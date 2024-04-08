@@ -4,6 +4,7 @@ const { createShop, updateShop, getAllshop, getSingleshop, deleteshop } = requir
 const router= express.Router();
 // create shop
 
+
 router.post('/createshop',requireSignin,isadmin,createShop)
 // update shop
 router.put('/updateshop/:id',requireSignin,isadmin,updateShop)
