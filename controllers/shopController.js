@@ -45,6 +45,7 @@ exports.updateShop = async(req,res)=>{
     try{
         const {name,address}= req.body;
         
+        
         const {id}= req.params;
         
         const shop = await Shop.findByIdAndUpdate(id,{
